@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
     Widget titleSection = Container(
       padding: const EdgeInsets.all(50.0),
       child: Row(
-        
         children: [
           Expanded(
             child: Column(
