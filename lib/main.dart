@@ -15,8 +15,17 @@ class MyApp extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Icon(
+                  Icons.person_outline,
+                  size: (50.0),
+                  color: Colors.pink,
+                ),
+                Text(
+                  'Account Information',
+                  style: TextStyle(fontSize: 20.0),
+                ),
                 Container(
-                  padding: const EdgeInsets.only(bottom: 50.0),
+                  padding: const EdgeInsets.only(bottom: 80.0),
                   child: Text(
                     '',
                     style: TextStyle(
@@ -25,21 +34,13 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Total Trip Details',
+                  '''Total Trip Details''',
                   style: TextStyle(
                     color: Colors.black,
                   ),
                 ),
               ],
             ),
-          ),
-          Icon(
-            Icons.person_outline,
-            color: Colors.pink,
-          ),
-          Text(
-            'Account Information',
-            style: TextStyle(fontSize: 20.0),
           ),
         ],
       ),
@@ -74,8 +75,7 @@ class MyApp extends StatelessWidget {
         children: [
           buildButtonColumn(Icons.control_point_duplicate, '''
           Total Points
-          1202
-          '''),
+          1202'''),
           buildButtonColumn(Icons.attach_money, '''
           Total Cost
           87.87'''),
@@ -92,11 +92,16 @@ class MyApp extends StatelessWidget {
         '''
 Your Details
 
+
 Name: John Dow
+
 Date of Birth: 23/9/1997
+
 Cover Third Party
+
 Policy Number: 877862523h78
         ''',
+        textAlign: TextAlign.center,
         softWrap: true,
       ),
     );
@@ -105,7 +110,9 @@ Policy Number: 877862523h78
       title: 'Admiral Group',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Single Trip Insurer'),
+          backgroundColor: Colors.white,
+          title: Text('                    Single Trip Insurer',
+              style: TextStyle(color: Colors.black)),
         ),
         body: ListView(
           children: [
