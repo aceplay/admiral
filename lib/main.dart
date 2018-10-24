@@ -111,8 +111,8 @@ Policy Number: 877862523h78
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Text('                    Single Trip Insurer',
-              style: TextStyle(color: Colors.black)),
+          title: Text('                         Single Trip Insurer',
+              style: TextStyle(color: Colors.black, fontSize: 17.0)),
         ),
         body: ListView(
           children: [
